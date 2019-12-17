@@ -9,3 +9,9 @@ C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\obj\Debug\netcoreapp3.0\Ex
 C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\obj\Debug\netcoreapp3.0\ExpressionTesting.AssemblyInfo.cs
 C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\obj\Debug\netcoreapp3.0\ExpressionTesting.dll
 C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\obj\Debug\netcoreapp3.0\ExpressionTesting.pdb
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\bin\Debug\netcoreapp3.0\AutoMapper.dll
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\bin\Debug\netcoreapp3.0\Mmu.Mlh.ConsoleExtensions.dll
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\bin\Debug\netcoreapp3.0\Mmu.Mlh.LanguageExtensions.dll
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\bin\Debug\netcoreapp3.0\Mmu.Mlh.ServiceProvisioning.dll
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\bin\Debug\netcoreapp3.0\StructureMap.dll
+C:\MyGit\Personal\ExpressionTesting\ExpressionTesting\obj\Debug\netcoreapp3.0\ExpressionTesting.csproj.CopyComplete

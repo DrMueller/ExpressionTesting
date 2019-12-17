@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\MyGit\\Personal\\ExpressionTesting\\ExpressionTesting\\ExpressionTesting.csproj",
         "projectName": "ExpressionTesting",
         "projectPath": "C:\\MyGit\\Personal\\ExpressionTesting\\ExpressionTesting\\ExpressionTesting.csproj",
-        "packagesPath": "C:\\Users\\Matthias\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
         "outputPath": "C:\\MyGit\\Personal\\ExpressionTesting\\ExpressionTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matthias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/intersim/_packaging/intersim/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Mmu.Mlh.ConsoleExtensions": {
+              "target": "Package",
+              "version": "[1.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
