@@ -45,6 +45,10 @@
             "Mmu.Mlh.ConsoleExtensions": {
               "target": "Package",
               "version": "[1.0.13, )"
+            },
+            "Mmu.Mlh.ServiceProvisioning": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

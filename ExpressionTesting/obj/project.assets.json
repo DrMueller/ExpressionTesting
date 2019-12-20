@@ -2,16 +2,17 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "AutoMapper/7.0.1": {
+      "AutoMapper/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.ValueTuple": "4.5.0"
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
         },
         "compile": {
-          "lib/netcoreapp2.0/AutoMapper.dll": {}
+          "lib/netstandard2.0/AutoMapper.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/AutoMapper.dll": {}
+          "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2": {
@@ -27,6 +28,15 @@
         "type": "package",
         "build": {
           "build/_._": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.NetCore.Analyzers/2.6.2": {
@@ -74,11 +84,12 @@
           "lib/netcoreapp2.1/Mmu.Mlh.ConsoleExtensions.dll": {}
         }
       },
-      "Mmu.Mlh.LanguageExtensions/2.0.9": {
+      "Mmu.Mlh.LanguageExtensions/2.1.18": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.0",
-          "StructureMap": "4.6.1"
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.2",
+          "StructureMap": "4.7.0",
+          "StyleCop.Analyzers": "1.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Mmu.Mlh.LanguageExtensions.dll": {}
@@ -87,12 +98,12 @@
           "lib/netstandard2.0/Mmu.Mlh.LanguageExtensions.dll": {}
         }
       },
-      "Mmu.Mlh.ServiceProvisioning/2.0.1": {
+      "Mmu.Mlh.ServiceProvisioning/2.1.1": {
         "type": "package",
         "dependencies": {
-          "AutoMapper": "7.0.1",
-          "Mmu.Mlh.LanguageExtensions": "2.0.9",
-          "StructureMap": "4.7.0"
+          "AutoMapper": "8.0.0",
+          "Mmu.Mlh.LanguageExtensions": "2.1.18",
+          "StructureMap": "4.7.1"
         },
         "compile": {
           "lib/netstandard2.0/Mmu.Mlh.ServiceProvisioning.dll": {}
@@ -101,7 +112,7 @@
           "lib/netstandard2.0/Mmu.Mlh.ServiceProvisioning.dll": {}
         }
       },
-      "StructureMap/4.7.0": {
+      "StructureMap/4.7.1": {
         "type": "package",
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0",
@@ -208,6 +219,22 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Reflection.dll": {}
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/System.Reflection.Emit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.dll": {}
         }
       },
       "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -342,15 +369,6 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "Text.Analyzers/2.6.2": {
         "type": "package",
         "build": {
@@ -360,24 +378,18 @@
     }
   },
   "libraries": {
-    "AutoMapper/7.0.1": {
-      "sha512": "6xHbhsW09sWjjYuE1sqhYn25PQzB6UEUVPME5uhlaIz2NR2+L3+FGbVxvknJKug1BLp6VTLxDb5RcGXKMm0ieQ==",
+    "AutoMapper/8.0.0": {
+      "sha512": "px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
       "type": "package",
-      "path": "automapper/7.0.1",
+      "path": "automapper/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.7.0.1.nupkg.sha512",
+        "automapper.8.0.0.nupkg.sha512",
         "automapper.nuspec",
-        "lib/net45/AutoMapper.dll",
-        "lib/net45/AutoMapper.pdb",
-        "lib/net45/AutoMapper.xml",
-        "lib/netcoreapp2.0/AutoMapper.dll",
-        "lib/netcoreapp2.0/AutoMapper.pdb",
-        "lib/netcoreapp2.0/AutoMapper.xml",
-        "lib/netstandard1.3/AutoMapper.dll",
-        "lib/netstandard1.3/AutoMapper.pdb",
-        "lib/netstandard1.3/AutoMapper.xml",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
@@ -470,6 +482,74 @@
         "rulesets/UsageRulesEnabled.ruleset",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.NetCore.Analyzers/2.6.2": {
@@ -587,32 +667,32 @@
         "mmu.mlh.consoleextensions.nuspec"
       ]
     },
-    "Mmu.Mlh.LanguageExtensions/2.0.9": {
-      "sha512": "7ZHteN4mpVhnj6kdqSo0XNLS/5fA938QE0D1H8JHEaOflRhSu3hRCf1u0KHWMyoWsE9iVbFGMP0q/SlgEPsryg==",
+    "Mmu.Mlh.LanguageExtensions/2.1.18": {
+      "sha512": "3GAivPmROq2jatyLKxrNFL5TRVO5azk61r8MvfkrhskHZaaDrSt9omPwl8sNDswF7NzN2IQ8ynyzhlySjb/uew==",
       "type": "package",
-      "path": "mmu.mlh.languageextensions/2.0.9",
+      "path": "mmu.mlh.languageextensions/2.1.18",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Mmu.Mlh.LanguageExtensions.dll",
-        "mmu.mlh.languageextensions.2.0.9.nupkg.sha512",
+        "mmu.mlh.languageextensions.2.1.18.nupkg.sha512",
         "mmu.mlh.languageextensions.nuspec"
       ]
     },
-    "Mmu.Mlh.ServiceProvisioning/2.0.1": {
-      "sha512": "+SY65dGp07ytPQgU9HZZnCh4OzY5AexmG4ZaznNcbXUeUSJpkR20ege51RrsPdRYhWxpyx4DzgQsro0fNyPYbg==",
+    "Mmu.Mlh.ServiceProvisioning/2.1.1": {
+      "sha512": "V6U40qDZL5X90PGxhl4djKLjWZULvU3vgERRJLIxS9MGmZbG1zLiX3vfGxftuwUz2w1tVW1tehz3tQQIrP8f/g==",
       "type": "package",
-      "path": "mmu.mlh.serviceprovisioning/2.0.1",
+      "path": "mmu.mlh.serviceprovisioning/2.1.1",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Mmu.Mlh.ServiceProvisioning.dll",
-        "mmu.mlh.serviceprovisioning.2.0.1.nupkg.sha512",
+        "mmu.mlh.serviceprovisioning.2.1.1.nupkg.sha512",
         "mmu.mlh.serviceprovisioning.nuspec"
       ]
     },
-    "StructureMap/4.7.0": {
-      "sha512": "nRw8YXeyCpWGBC2/pOPxReYurCaJ9MRyCZYsqUSm7JYG4e4ExHbJywuboHikVHq3XAnoCuSImMjaB0r1t3g7tw==",
+    "StructureMap/4.7.1": {
+      "sha512": "ePJIef6IFpQ+WmDoH2Xr4EFrnbI1z79Z8ukt5ZhlsjKgK47giEJmqnym9BXJ91meBj1dl/7Hn6Nw1amsLFbHJA==",
       "type": "package",
-      "path": "structuremap/4.7.0",
+      "path": "structuremap/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -624,7 +704,7 @@
         "lib/netstandard1.5/StructureMap.xml",
         "lib/netstandard2.0/StructureMap.dll",
         "lib/netstandard2.0/StructureMap.xml",
-        "structuremap.4.7.0.nupkg.sha512",
+        "structuremap.4.7.1.nupkg.sha512",
         "structuremap.nuspec"
       ]
     },
@@ -1159,6 +1239,42 @@
         "ref/xamarinwatchos10/_._",
         "system.reflection.4.3.0.nupkg.sha512",
         "system.reflection.nuspec"
+      ]
+    },
+    "System.Reflection.Emit/4.3.0": {
+      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "type": "package",
+      "path": "system.reflection.emit/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/net45/_._",
+        "ref/netstandard1.1/System.Reflection.Emit.dll",
+        "ref/netstandard1.1/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/de/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/es/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/fr/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/it/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ja/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ko/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/xamarinmac20/_._",
+        "system.reflection.emit.4.3.0.nupkg.sha512",
+        "system.reflection.emit.nuspec"
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -1834,50 +1950,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Text.Analyzers/2.6.2": {
       "sha512": "UcSpZtr7TXPWj59F9WGZd7Edcm+ppBW4OeA/VuqX0RUJ6t/qgCqPfbRAJ/WbT5hcMHaI2pOn7kMbG5gOayravQ==",
       "type": "package",
@@ -1908,7 +1980,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Mmu.Mlh.ConsoleExtensions >= 1.0.13"
+      "Mmu.Mlh.ConsoleExtensions >= 1.0.13",
+      "Mmu.Mlh.ServiceProvisioning >= 2.1.1"
     ]
   },
   "packageFolders": {
@@ -1956,6 +2029,10 @@
           "Mmu.Mlh.ConsoleExtensions": {
             "target": "Package",
             "version": "[1.0.13, )"
+          },
+          "Mmu.Mlh.ServiceProvisioning": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
